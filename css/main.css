@@ -1,0 +1,9 @@
+nav {
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
