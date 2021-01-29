@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <header>
-    <link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
+  <head>
+    <!-- <link  ref="css/reset.css" rel="stylesheet" type="text/css" media="all" /> -->
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
     <title>Google Homepage Clone</title>
-  </header>
+    <link
+      rel="icon"
+      href="https://img-authors.flaticon.com/google.jpg"
+      type="image/x-icon"
+    />
+  </head>
 
   <body>
     <nav>
-      <a id="about" href="#">About</a>
-      <a id="Store" href="#">Store</a>
-      <a id="Gmail" href="#">Gmail</a>
-      <a id="Images" href="#">Images</a>
+      <div class="nav-left">
+        <a id="about" href="#">About</a>
+        <a id="Store" href="#">Store</a>
+      </div>
+      <div style="width: 66%">
+        <div class="nav-right">
+          <a id="Gmail" href="#">Gmail</a>
+          <a id="Images" href="#">Images</a>
+        </div>
+      </div>
     </nav>
     <main>
-      <div>
+      <div class="logo">
         <img
           alt="Google"
           src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         />
       </div>
-      <div>
-        <form action"#">
-        <input type="text" placeholder="Search" />
-        <button type="submit">Google Search</button>
-        <button type="submit">I'm feeling lucky</button>
+      <div class="search-function">
+        <form action="#">
+          <input type="text" placeholder="Search" size="40" />
+          <button type="submit">Google Search</button>
+          <button type="submit">I'm feeling lucky</button>
         </form>
       </div>
-      <div>Data Privacy Day checkup</div>
-
+      <div class="data-privacy-day">
+        <a href="#">Data Privacy Day checkup</a>
+      </div>
     </main>
-    <footer>
-        <div><a href="#">Advertising</a>
+    <footer style="padding: 20px">
+      <div>
+        <a href="#">Advertising</a>
         <a href="#">Business</a>
-        <a href="#">How Search works</a></div>
-        <div><p>Carbon neutral statement</p></div>
-        <div><a href="#">Privacy</a>
+        <a href="#">How Search works</a>
+      </div>
+      <div><p>Carbon neutral statement</p></div>
+      <div>
+        <a href="#">Privacy</a>
         <a href="#">Terms</a>
-        <a href="#">Settings</a></div>
+        <a href="#">Settings</a>
+      </div>
     </footer>
   </body>
 </html>
