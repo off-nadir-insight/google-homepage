@@ -1,7 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
-  height: 95vw;
-  width: 95vw;
+  min-height: 100vw;
+  /* min-width: 100vw; */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -79,8 +86,12 @@ form {
 }
 
 .search-bar input {
-  width: 400px;
+  border: 1px solid;
+  border-color: grey;
+  border-radius: 10px;
   height: 20px;
+  padding: 10px;
+  width: 400px;
 }
 
 .search-buttons {
@@ -116,7 +127,8 @@ footer {
   background: rgb(242, 242, 242);
   color: #70757a;
   display: flex;
-  height: 46px;
+  flex: 1 0 auto;
+  min-height: 46px;
   justify-content: space-around;
   left: 0;
   margin: 0 auto;
@@ -132,4 +144,24 @@ footer div {
 
 footer div a {
   padding: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .footer-left {
+    order: 2;
+    max-height: 25px;
+  }
+  .footer-right {
+    order: 3;
+    max-height: 25px;
+  }
+  .footer-center {
+    order: 1;
+    max-height: 25px;
+  }
 }
